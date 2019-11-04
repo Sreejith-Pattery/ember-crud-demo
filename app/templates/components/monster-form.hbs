@@ -1,0 +1,20 @@
+<div class="monster-card">
+    Name: {{one-way-input value=model.name update=(action (mut model.name))}}
+    <br/>
+    Level: {{one-way-input value=model.level update=(action (mut model.level))}}
+    {{#liquid-if isHighLevel class="high-level"}}
+    <p>Wow! Such a high level!</p>
+    {{else}}
+    <p>Work Harder, level up</p>
+    {{/liquid-if}}
+    <br/>
+    
+    {{#liquid-spacer growDuration=3000}}
+    <img src={{model.location}} />
+    {{/liquid-spacer}}
+    <br/>
+    Image Source: {{one-way-input value=model.location update=(action (mut model.location))}}
+    <br/>
+    Price (in dollars):{{one-way-input value=model.price update=(action (mut model.price))}}
+</div>
+<button {{action 'save'}}>Save</button>
