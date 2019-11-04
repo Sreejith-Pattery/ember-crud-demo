@@ -12,6 +12,8 @@ You will need the following things properly installed on your computer.
 * [Ember CLI](https://ember-cli.com/)
 * [PhantomJS](http://phantomjs.org/)
 
+* Use node 8 versions as bootstrap-sass throws errors in later versions (at the time of upload)
+
 ## Installation
 
 * `git clone <repository-url>` this repository
